@@ -1,7 +1,7 @@
 # 0x00-python-hello_world
 
 * **0-run**: Shell script that runs python code, name of the file must be in the variable $PYFILE
-* **1-run_inline**: Shell script that runs python code, name of the file must be in the variable $PYCODE
+* **1-run_inline**: Shell script that runs python code, the command must be in the variable $PYCODE
 * **2-print.py**: Prints '"Programming is like building a multilingual puzzle', followed by a new line.
 * **3-print_number.py**: Prints an integer stored in the variable number, followed by Battery street, followed by a new line.
 * **4-print_float.py**: Prints a float stored in the variable number with a precision of 2 digits.
