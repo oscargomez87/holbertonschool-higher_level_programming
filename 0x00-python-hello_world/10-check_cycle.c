@@ -10,6 +10,8 @@ int check_cycle(listint_t *list)
 {
 	const listint_t *node;
 
+	if (list == NULL)
+		return (0);
 	node = list;
 	while (node->next != NULL)
 	{
