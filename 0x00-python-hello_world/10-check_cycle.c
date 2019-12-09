@@ -8,15 +8,20 @@
  */
 int check_cycle(listint_t *list)
 {
-	const listint_t *node;
+	const listint_t *node, *temp;
 
 	if (list == NULL)
 		return (0);
 	node = list;
 	while (node->next != NULL)
 	{
-		if (node->next == list)
-			return (1);
+		temp = list;
+		while (temp->next != NULL && temp != node)
+		{
+			if (node->next == temp)
+				return (1);
+			temp = temp->next;
+		}
 		node = node->next;
 	}
 	return (0);
