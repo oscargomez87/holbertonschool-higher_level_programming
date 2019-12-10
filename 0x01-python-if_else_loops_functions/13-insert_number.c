@@ -30,7 +30,10 @@ listint_t *insert_node(listint_t **head, int number)
 				break;
 			}
 		}else
+		{
 			temp->next = newnode;
+			break;
+		}
 		temp = temp->next;
 	}
 	return (newnode);
