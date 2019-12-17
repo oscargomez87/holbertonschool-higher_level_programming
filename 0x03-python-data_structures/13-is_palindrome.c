@@ -1,34 +1,26 @@
 #include "lists.h"
 int is_palindrome(listint_t **head)
 {
-	listint_t *temp;
-	int *data;
-	unsigned int i = 0, j = 0;
+	listint_t *root, *end, *bp;
 
 	if (*head == NULL)
 		return (1);
 	if ((*head)->next == NULL)
 		return (1);
-	temp = *head;
-	while (temp->next != NULL)
+	bp = *head;
+	while (bp)
+		bp = bp->next;
+	root = *head;
+	end = *head;
+	while (root->next != bp)
 	{
-		temp = temp->next;
-		i++;
-	}
-	data = malloc(sizeof(int) * i);
-	while (temp->next != NULL)
-        {
-		data[j] = temp->n;
-                temp = temp->next;
-		j++;
-        }
-	j = 0;
-	while (j <= i)
-	{
-		if (data[j] != data[i])
+		while (end->next != bp)
+			end = end->next;
+		bp = end;
+		if (root->n != bp->n)
 			return (0);
-		i--;
-		j++;
+		root = root->next;
+		end = *head;
 	}
 	return (1);
 
