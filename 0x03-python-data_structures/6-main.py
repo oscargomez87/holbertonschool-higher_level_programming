@@ -9,6 +9,4 @@ matrix = [
 
 print_matrix_integer(matrix)
 print("--")
-print_matrix_integer([1, 2, 3])
-print("--")
 print_matrix_integer()
