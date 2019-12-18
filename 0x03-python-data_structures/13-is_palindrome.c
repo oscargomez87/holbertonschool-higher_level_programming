@@ -23,12 +23,13 @@ int is_palindrome(listint_t **head)
 		i++;
 	}
 	temp = *head;
-	while (temp != NULL)
+	while (temp->next != NULL)
         {
 		data[j] = temp->n;
                 temp = temp->next;
 		j++;
         }
+	data[j] = temp->n;
 	j = 0;
 	while (j <= i)
 	{
