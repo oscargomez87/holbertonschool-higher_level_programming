@@ -8,8 +8,9 @@
     * Same size as __matrix__
     * Each value is the square of the value of the input
   * Initial matrix will not be modified
-  * No module imported  
-  __Example__  
+  * No module imported
+
+  __Example__
 
   ```
   :~/0x04$ cat 0-main.py
@@ -30,7 +31,7 @@
   [[1, 4, 9], [16, 25, 36], [49, 64, 81]]
   [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
   :~/0x04$
-  ```  
+  ```
 
 * ***1-search_replace.py***: Function that replaces all occurrences of an element by another in a new list
 
@@ -38,8 +39,10 @@
   * __my_list__ is the initial list
   * search is the element to replace in the list
   * __replace__ is the new element
-  * No module imported  
-  __Example__  
+  * No module imported
+
+  __Example__
+
   ```
   :~/0x04$ cat 1-main.py
   #!/usr/bin/python3
@@ -55,13 +58,15 @@
   [1, 89, 3, 4, 5, 4, 89, 1, 1, 4, 89]
   [1, 2, 3, 4, 5, 4, 2, 1, 1, 4, 89]
   :~/0x04$
-  ```  
+  ```
 
 * ***2-uniq_add.py***: Function that returns a set of common elements in two sets
 
   * Prototype: def common_elements(set_1, set_2):
   * You are not allowed to import any module
-  __Example__  
+
+  __Example__
+
   ```
   :~/0x04$ cat 3-main.py
   #!/usr/bin/python3
@@ -74,14 +79,16 @@
 
   :~/0x04$ ./3-main.py
   ['C']
-  :~/0x04$ 
-  ```  
+  :~/0x04$
+  ```
 
 * ***4-only_diff_elements.py***: Function that returns a set of all elements present in only one set.
 
   * Prototype: __def only_diff_elements(set_1, set_2):__
-  * No module imported  
-  __Example__  
+  * No module imported
+
+  __Example__
+
   ```
   :~/0x04$ cat 4-main.py
   #!/usr/bin/python3
@@ -95,13 +102,15 @@
   :~/0x04$ ./4-main.py
   ['Bash', 'Javascript', 'Perl', 'Python', 'Ruby']
   :~/0x04$
-  ```  
+  ```
 
 * ***5-number_keys.py***: function that returns the number of keys in a dictionary
 
   * Prototype: __def number_keys(a_dictionary):__
-  * No module imported  
-  __Example__  
+  * No module imported
+
+  __Example__
+
   ```
   :~/0x04$ cat 5-main.py
   #!/usr/bin/python3
@@ -114,7 +123,7 @@
   :~/0x04$ ./5-main.py
   Number of keys: 3
   :~/0x04$
-  ```  
+  ```
 
 * ***6-print_sorted_dictionary.py***: Function that prints a dictionary by ordered keys.
 
@@ -123,8 +132,9 @@
   * Keys will be sorted by alphabetic order
   * Only keys of the first level will be sorted (won't sort keys of a dictionary inside the main dictionary)
   * Dictionary values can have any type
-  * No module imported  
-  __Example__  
+  * No module imported
+
+  __Example__
 
   ```
   :~/0x04$ cat 6-main.py
@@ -140,7 +150,7 @@
   language: C
   track: Low level
   guillaume@ubuntu:~/0x04$
-  ```  
+  ```
 
 * ***7-update_dictionary.py***: Function that replaces or adds key/value in a dictionary
 
@@ -149,8 +159,10 @@
   * value argument can be any type
   * If a key exists in the dictionary, the value will be replaced
   * If a key doesn’t exist in the dictionary, it will be created
-  * No module imported  
-  __Example__  
+  * No module imported
+
+  __Example__
+
   ```
   :~/0x04$ cat 7-main.py
   #!/usr/bin/python3
@@ -190,8 +202,8 @@
   language: Python
   number: 89
   track: Low level
-  :~/0x04$ 
-  ```  
+  :~/0x04$
+  ```
 
 * ***8-simple_delete.py***: Function that deletes a key in a dictionary.
 
@@ -239,7 +251,7 @@
   Number: 89
   ids: [1, 2, 3]
   language: C
-  :~/0x04$ 
+  :~/0x04$
   ```
 
 * ***9-multiply_by_2.py***: function that returns a new dictionary with all values multiplied by 2
@@ -304,7 +316,7 @@
   :~/0x04$ ./10-main.py
   Best score: Molly
   Best score: None
-  :~/0x04$ 
+  :~/0x04$
   ```
 
 * ***11-mutiply_list_map.py***: Function that converts a Roman numeral to an integer.
@@ -315,6 +327,7 @@
   * If the roman_string is not a string or None, returns 0
 
   __Example__
+
   ```
   :~/0x04$ cat 12-main.py
   #!/usr/bin/python3
@@ -343,5 +356,5 @@
   IX = 9
   LXXXVII = 87
   DCCVII = 707
-  :~/0x04$ 
+  :~/0x04$
   ```
