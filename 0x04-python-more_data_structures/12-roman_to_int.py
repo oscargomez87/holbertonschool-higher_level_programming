@@ -9,9 +9,17 @@ def roman_to_int(roman_string):
         for c in list(romans.keys()):
             if e == c:
                 result.append(romans[e])
+    if len(result) < 2:
+        return result[0]
     for idx, e in enumerate(result):
-        if e <= result[idx - 1]:
-            resum = resum + e
+        if idx < len(result) - 1:
+            if e >= result[idx + 1]:
+                resum = resum + e
+            else:
+                if e > resum:
+                    resum = e - resum
+                else:
+                    resum = resum - e
         else:
-            resum = e - resum
+            resum = resum + e
     return resum
