@@ -24,4 +24,6 @@ def roman_to_int(roman_string):
                     resum = resum - e
         else:
             resum = resum + e
+    if resum > 3999:
+        return 3999
     return resum
