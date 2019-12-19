@@ -321,7 +321,7 @@
 
 * ***11-mutiply_list_map.py***: Function that converts a Roman numeral to an integer.
 
-  * Prototype __def roman_to_int(roman_string): __
+  * Prototype __def roman_to_int(roman_string):__
   * The number must be between 1 to 3999.
   * __def roman_to_int(roman_string)__ will return an integer
   * If the roman_string is not a string or None, returns 0
