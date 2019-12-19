@@ -9,14 +9,13 @@
 int is_palindrome(listint_t **head)
 {
 	listint_t *temp;
-	int *data;
+	int *data[2048];
 	unsigned int i = 0, j = 0;
 
 	if (*head == NULL)
 		return (1);
 	if ((*head)->next == NULL)
 		return (1);
-	data = malloc(sizeof(int) * 4096);
 	temp = *head;
 	while (temp != NULL)
 	{
