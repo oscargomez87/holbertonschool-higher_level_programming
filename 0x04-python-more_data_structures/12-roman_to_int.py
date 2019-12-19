@@ -8,8 +8,8 @@ def roman_to_int(roman_string):
     resum = 0
     for st in range(len(roman_string)):
         if st > 0 and romans[roman_string[st]] > romans[roman_string[st - 1]]:
-            resum += romans[roman_string[st]] -
-            2 * romans[roman_string[st - 1]]
+            resum += (romans[roman_string[st]] -
+                      2 * romans[roman_string[st - 1]])
         else:
             resum += romans[roman_string[st]]
     return resum
