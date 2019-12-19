@@ -19,7 +19,7 @@ int is_palindrome(listint_t **head)
 	temp = *head;
 	while (temp != NULL)
 	{
-		data[i] = temp->n;
+		data[i] = &(temp->n);
 		temp = temp->next;
 		i++;
 	}
