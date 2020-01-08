@@ -236,7 +236,7 @@ Function that raises a name exception with a message.
 
 _Example:_
 
-````
+```
 ~/0x05$ cat 6-main.py
 #!/usr/bin/python3
 raise_exception_msg = __import__('6-raise_exception_msg').raise_exception_msg
