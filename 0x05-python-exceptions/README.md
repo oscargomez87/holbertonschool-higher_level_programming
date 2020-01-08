@@ -2,7 +2,7 @@
 
 Understanding of error handling in python.
 
-##0-safe_print_list.py
+## 0-safe_print_list.py
 Function that prints _x_ elements of a list.
 
 - The list can contain any type (integer, string, etc.).
@@ -39,7 +39,7 @@ nb_print: 5
 ~/0x05$
 ```
 
-##1-safe_print_integer.py
+## 1-safe_print_integer.py
 Function that prints an integer with _"{:d}".format()_.
 
 - The value received can be any type (integer, string, etc.).
@@ -80,7 +80,7 @@ Holberton is not an integer
 ~/0x05$
 ```
 
-##2-safe_print_list_integers.py
+## 2-safe_print_list_integers.py
 Function that prints the first _x_ elements of a list and only integers.
 
 - The list can contain any type (integer, string, etc.)
@@ -127,7 +127,7 @@ IndexError: list index out of range
 ~/0x05$
 ```
 
-##3-safe_print_division.py
+## 3-safe_print_division.py
 Function that divides 2 integers and prints the result.
 
 - The 2 values must always be integers
@@ -162,7 +162,7 @@ Inside result: None
 ~/0x05$
 ```
 
-##4-list_division.py
+## 4-list_division.py
 Function that divides element by element from 2 lists by a given length.
 
 - The two lists can contain any type (integer, string, etc.)
@@ -207,7 +207,7 @@ out of range
 ~/0x05$
 ```
 
-##5-raise_exception.py##
+## 5-raise_exception.py
 Function that raises a type exception.
 
 - No modules imported.
@@ -229,7 +229,7 @@ Exception raised
 ~/0x05$
 ```
 
-##6-raise_exception_msg.py
+## 6-raise_exception_msg.py
 Function that raises a name exception with a message.
 
 - No modules imported.
