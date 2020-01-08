@@ -1,2 +1,2 @@
 def raise_exception():
-    1 / "s"
+    a = 1 / "s"
