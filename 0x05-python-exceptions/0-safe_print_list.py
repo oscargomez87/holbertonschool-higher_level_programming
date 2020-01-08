@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
+    counter = 0
     try:
-        for idx, y in enumerate(my_list[:x], 1):
-            print("{}".format(y), end="")
+        for y in range(0, x):
+            print("{}".format(my_list[y]), end="")
+            counter += 1
         print("")
-        return idx
+        return counter
     except:
-        return idx
+        print("")
+        return counter
