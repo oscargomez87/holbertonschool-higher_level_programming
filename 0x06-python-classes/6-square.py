@@ -48,15 +48,11 @@ class Square:
 
     @position.setter
     def position(self, value):
-        try:
-            for t in value:
-                print(t)
-                if t < 0:
-                    raise TypeError("position must be a
-                                    tuple of 2 positive integers")
+        for t in value:
+            if t < 0:
+                raise TypeError
+                ("position must be a tuple of 2 positive integers")
             self.__position = value
-        except TypeError:
-            raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
         """Defines the area of the square
