@@ -3,7 +3,7 @@
 
 This module demonstrates the creation of classes.
 """
-class Square():
+class Square:
     """Empty class.
 
     Defines a square class.
