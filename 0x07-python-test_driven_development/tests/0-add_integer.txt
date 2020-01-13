@@ -19,6 +19,14 @@ Now use it:
     9
     >>> add_integer(6.2, 3)
     9
+    >>> add_integer(6, None)
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    >>> add_integer(None, 5)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
     >>> add_integer(6, 5j)
     Traceback (most recent call last):
         ...
