@@ -46,6 +46,38 @@ Test passed.
 ```
 
 ## 2-matrix_divided.py, tests/2-matrix_divided.txt
+Function that divides all elements of a matrix.
+
+- The matrix must be a list of lists of integers or floats, otherwise raise a TypeError exception with the message matrix must be a matrix (list of lists) of integers/floats
+- Each row of the matrix must be of the same size, otherwise raise a TypeError exception with the message Each row of the matrix must have the same size
+- The number the matrix is divided by must be a number (integer or float), otherwise raise a TypeError exception with the message div must be a number
+- The number the matrix is divided by can’t be equal to 0, otherwise raise a ZeroDivisionError exception with the message division by zero
+- All elements of the matrix will be divided and rounded to 2 decimal places
+- Returns a new matrix
+- No module imported
+
+_Example:_
+
+```
+~/0x07$ cat 2-main.py
+#!/usr/bin/python3
+matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+print(matrix_divided(matrix, 3))
+print(matrix)
+
+~/0x07$ ./2-main.py
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+[[1, 2, 3], [4, 5, 6]]
+~/0x07$ python3 -m doctest -v ./tests/2-matrix_divided.txt | tail -2
+5 passed and 0 failed.
+Test passed.
+~/0x07$
+```
 
 ## 3-say_my_name.py, tests/3-say_my_name.txt
 
