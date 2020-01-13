@@ -112,7 +112,61 @@ Test passed.
 ```
 
 ## 4-print_square.py, tests/4-print_square.txt
+Function that prints a square with the character #.
 
+- The size of the square must be an integer, otherwise raise a TypeError exception with the message size must be an integer
+- If the size of the square is less than 0, raise a ValueError exception with the message size must be >= 0
+- If the size of the square is a float and is less than 0, raise a TypeError exception with the message size must be an integer
+- No modules imported
+
+_Example:_
+
+```
+~/0x07$ cat 4-main.py
+#!/usr/bin/python3
+print_square = __import__('4-print_square').print_square
+
+print_square(4)
+print("")
+print_square(10)
+print("")
+print_square(0)
+print("")
+print_square(1)
+print("")
+try:
+    print_square(-1)
+except Exception as e:
+    print(e)
+print("")
+
+~/0x07$ ./4-main.py
+####
+####
+####
+####
+
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+
+#
+
+size must be >= 0
+
+~/0x07$ python3 -m doctest -v ./tests/4-print_square.txt | tail -2
+8 passed and 0 failed.
+Test passed.
+~/0x07$
+```
 
 ## 5-text_indentation.py, tests/5-text_indentation.txt
 
