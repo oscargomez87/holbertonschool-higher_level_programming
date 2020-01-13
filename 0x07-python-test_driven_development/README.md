@@ -80,8 +80,39 @@ Test passed.
 ```
 
 ## 3-say_my_name.py, tests/3-say_my_name.txt
+Function that prints My name is <first name> <last name>
+
+- first_name and last_name must be strings otherwise, raise a TypeError exception with the message first_name must be a string or last_name must be a string
+- No module imported
+
+_Example:_
+
+```
+~/0x07$ cat 3-main.py
+#!/usr/bin/python3
+say_my_name = __import__('3-say_my_name').say_my_name
+
+say_my_name("John", "Smith")
+say_my_name("Walter", "White")
+say_my_name("Bob")
+try:
+    say_my_name(12, "White")
+except Exception as e:
+    print(e)
+
+~/0x07$ ./3-main.py | cat -e
+My name is John Smith$
+My name is Walter White$
+My name is Bob $
+first_name must be a string$
+~/0x07$ python3 -m doctest -v ./tests/3-say_my_name.txt | tail -2
+5 passed and 0 failed.
+Test passed.
+~/0x07$
+```
 
 ## 4-print_square.py, tests/4-print_square.txt
+
 
 ## 5-text_indentation.py, tests/5-text_indentation.txt
 
