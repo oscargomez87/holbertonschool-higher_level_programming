@@ -24,7 +24,7 @@ class Rectangle:
             return ""
         text = ""
         for r in range(self.__height):
-            text = text + "{}".format(self.print_symbol * self.__width)
+            text = text + "{}".format(str(self.print_symbol) * self.__width)
             if r < self.__height - 1:
                 text = text + "\n"
         return text
