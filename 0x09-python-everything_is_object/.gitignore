@@ -1,4 +1,6 @@
 *
 !.txt
+![0-106]*.py
+*main*.py
 !README.md
 !.gitignore
