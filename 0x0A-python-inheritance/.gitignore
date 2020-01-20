@@ -1,4 +1,6 @@
 *
+!*/
+!/tests/**
 ![0-9]*.py
 *main*
 !README.md
