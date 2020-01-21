@@ -43,3 +43,11 @@ TypeError: my_int must be an integer
 Traceback (most recent call last):
     ...
 TypeError: my_int must be an integer
+>>> bg.integer_validator("my_int", True)
+Traceback (most recent call last):
+    ...
+TypeError: my_int must be an integer
+>>> bg.integer_validator("dic", {"name": "test"})
+Traceback (most recent call last):
+    ...
+TypeError: dic must be an integer
