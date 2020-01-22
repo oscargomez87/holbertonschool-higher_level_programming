@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Module that defines a class"""
-import json
 
 
 class Student:
@@ -21,9 +20,9 @@ class Student:
                     if e in self.__dict__:
                         dic[e] = self.__dict__.get(e)
                 else:
-                    dic = json.loads(json.dumps(self.__dict__))
+                    dic = self.__dict__
         else:
-            dic = json.loads(json.dumps(self.__dict__))
+            dic = self.__dict__
         return dic
 
     def reload_from_json(self, json):
