@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Module that defines a class"""
-import json
 
 
 class Student:
@@ -14,4 +13,4 @@ class Student:
 
     def to_json(self):
         """retrieves a dictionary representation of a Student instance"""
-        return json.loads(json.dumps(self.__dict__))
+        return self.__dict__
