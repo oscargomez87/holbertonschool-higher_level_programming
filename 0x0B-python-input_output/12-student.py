@@ -14,13 +14,10 @@ class Student:
     def to_json(self, attrs=None):
         """Retrieves a dictionary representation of a Student instance"""
         dic = {}
-        if not not attrs:
+        if not not attrs and all(isinstance(le, str) for le in attrs):
             for e in attrs:
-                if type(e) is str:
-                    if e in self.__dict__:
-                        dic[e] = self.__dict__.get(e)
-                else:
-                    dic = self.__dict__
+                if e in self.__dict__:
+                    dic[e] = self.__dict__.get(e)
         else:
             dic = self.__dict__
         return dic
