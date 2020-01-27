@@ -3,6 +3,5 @@
 !/tests/*
 !/models/*
 *main*
-*my_class*
 !README.md
 !.gitignore
