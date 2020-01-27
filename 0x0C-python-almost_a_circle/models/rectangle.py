@@ -88,7 +88,7 @@ class Rectangle(Base):
         if args:
             for idx, arg in enumerate(args):
                 if idx == 0:
-                    self.__id = arg
+                    self.id = arg
                 if idx == 1:
                     self.__width = arg
                 if idx == 2:
