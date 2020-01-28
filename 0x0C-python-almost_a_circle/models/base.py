@@ -43,6 +43,8 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """returns a list of dictionaries from a JSON string"""
+        if not json_string:
+            return []
         return json.loads(json_string)
 
     @classmethod
