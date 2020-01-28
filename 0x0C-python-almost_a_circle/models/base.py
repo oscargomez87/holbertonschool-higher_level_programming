@@ -37,8 +37,8 @@ class Base:
         if list_objs:
             for ins in list_objs:
                 listDict.append(ins.to_dictionary())
-            with open(clsFile, 'w', encoding='utf-8') as f:
-                    f.write(cls.to_json_string(listDict))
+        with open(clsFile, 'w', encoding='utf-8') as f:
+            f.write(cls.to_json_string(listDict))
 
     @staticmethod
     def from_json_string(json_string):
