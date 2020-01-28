@@ -9,6 +9,20 @@ import io
 class TestRectangle(unittest.TestCase):
     """Class with test cases for the Rectangle class"""
 
+    def test_doc(self):
+        """testing if doc exist"""
+        self.assertTrue(len(Rectangle.__doc__) > 0)
+        self.assertTrue(len(Rectangle.__init__.__doc__) > 0)
+        self.assertTrue(len(Rectangle.__str__.__doc__) > 0)
+        self.assertTrue(len(Rectangle.width.__doc__) > 0)
+        self.assertTrue(len(Rectangle.height.__doc__) > 0)
+        self.assertTrue(len(Rectangle.x.__doc__) > 0)
+        self.assertTrue(len(Rectangle.y.__doc__) > 0)
+        self.assertTrue(len(Rectangle.area.__doc__) > 0)
+        self.assertTrue(len(Rectangle.display.__doc__) > 0)
+        self.assertTrue(len(Rectangle.update.__doc__) > 0)
+        self.assertTrue(len(Rectangle.to_dictionary.__doc__) > 0)
+
     def test_id(self):
         """testing id counter and assignment"""
         r1 = Rectangle(10, 2)
