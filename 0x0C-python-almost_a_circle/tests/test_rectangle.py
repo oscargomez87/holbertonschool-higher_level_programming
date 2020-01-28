@@ -2,6 +2,8 @@
 """unittests for this project"""
 import unittest
 from models.rectangle import Rectangle
+import sys
+import io
 
 
 class TestRectangle(unittest.TestCase):
@@ -12,8 +14,8 @@ class TestRectangle(unittest.TestCase):
         r1 = Rectangle(10, 2)
         r2 = Rectangle(2, 10)
         r3 = Rectangle(10, 2, 0, 0, 12)
-        self.assertAlmostEqual(r1.id, 5)
-        self.assertAlmostEqual(r2.id, 6)
+        self.assertAlmostEqual(r1.id, 6)
+        self.assertAlmostEqual(r2.id, 7)
         self.assertAlmostEqual(r3.id, 12)
 
     def test_Type(self):
@@ -61,3 +63,22 @@ class TestRectangle(unittest.TestCase):
         """testing area of rectangle"""
         r = Rectangle(10, 2)
         self.assertAlmostEqual(r.area(), 20)
+
+    def test_display(self):
+        """test display"""
+        tmp = sys.stdout
+        sys.stdout = io.StringIO()
+        r1 = Rectangle(2, 3, 2, 2)
+        r1.display()
+        res = "\n\n  ##\n  ##\n  ##\n"
+        out = sys.stdout.getvalue()
+        sys.stdout.close()
+        sys.stdout = tmp
+        self.assertAlmostEqual(out, res)
+
+    def test_update(self):
+        r1 = Rectangle(10, 10, 10, 10, 10)
+        r1.update(height=1)
+        res1 = str(r1)
+        out = "[Rectangle] (10) 10/10 - 10/1"
+        self.assertMultiLineEqual(res1, out)
