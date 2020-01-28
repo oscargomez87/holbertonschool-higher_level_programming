@@ -18,3 +18,14 @@ class TestBase(unittest.TestCase):
         self.assertAlmostEqual(s1.id, 8)
         self.assertAlmostEqual(s2.id, 9)
         self.assertAlmostEqual(s3.id, 12)
+    def test_size_error(self):
+        s1 = Square(10, 2)
+        with self.assertRaises(ValueError):
+            s1.size = -1
+        with self.assertRaises(TypeError):
+            s1.size = "2"
+
+    def test_x_error(self):
+        s1 = Square(10, 2)
+        with self.assertRaises(ValueError):
+            s1.x = -1
