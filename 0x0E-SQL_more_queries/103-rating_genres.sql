@@ -8,4 +8,4 @@ SELECT tv_genres.name, SUM(tv_show_ratings.rate) as rating
        INNER JOIN tv_genres
        ON tv_show_genres.genre_id = tv_genres.id
  GROUP BY tv_genres.name
- ORDER BY rating DESC;
+ ORDER BY rating DESC, tv_genres.name ASC;
