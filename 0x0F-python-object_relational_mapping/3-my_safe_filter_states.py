@@ -12,7 +12,7 @@ def main():
     db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
     cqry = db.cursor()
     name = argv[4]
-    cqry.execute("""SELECT * FROM states WHERE name = %s""", (name,))
+    cqry.execute("""SELECT * FROM states WHERE BINARY name = %s""", (name,))
     rows = cqry.fetchall()
     for r in rows:
         print(r)
