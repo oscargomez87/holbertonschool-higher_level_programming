@@ -17,7 +17,7 @@ def main():
                                    pool_pre_ping=True))
     Session = sessionmaker(bind=engine)
     session = Session()
-    state = session.query(State).filter(State.name==argv[4]).one_or_none()
+    state = session.query(State).filter(State.name == argv[4]).one_or_none()
     if state:
         print(state.id)
     else:
