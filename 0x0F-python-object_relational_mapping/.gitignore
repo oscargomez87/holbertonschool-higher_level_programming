@@ -1,7 +1,7 @@
 *
 !*/
 !/tests/**
-![0-9]*.py
+!*.py
 *main*
 !README.md
 !.gitignore
