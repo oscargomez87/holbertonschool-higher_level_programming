@@ -14,7 +14,7 @@ def main():
     cqry = db.cursor()
     cqry.execute("""SELECT *
     FROM states
-    WHERE name = '{:s}'
+    WHERE BINARY name = '{:s}'
     ORDER BY id ASC""".format(argv[4]))
     rows = cqry.fetchall()
     for r in rows:
