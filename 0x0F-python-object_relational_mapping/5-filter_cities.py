@@ -15,7 +15,7 @@ def main():
     cqry.execute("""SELECT c.name
     FROM states AS s
     INNER JOIN cities AS c
-    WHERE s.name = %s AND s.id = c.state_id""", (s_name,))
+    WHERE BINARY s.name = %s AND s.id = c.state_id""", (s_name,))
     res = ''
     rows = cqry.fetchall()
     r_len = len(rows) - 1
