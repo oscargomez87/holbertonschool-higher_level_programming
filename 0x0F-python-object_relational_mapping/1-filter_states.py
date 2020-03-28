@@ -13,7 +13,7 @@ def main():
                          port=3306, host="localhost")
     cqry = db.cursor()
     cqry.execute("""SELECT * FROM states
-    WHERE name LIKE 'N%' ORDER BY id ASC""")
+    WHERE name LIKE BINARY 'N%' ORDER BY id ASC""")
     rows = cqry.fetchall()
     for r in rows:
         print(r)
