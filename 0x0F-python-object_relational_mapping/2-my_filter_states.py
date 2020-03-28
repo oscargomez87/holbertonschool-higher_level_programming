@@ -9,9 +9,13 @@ from sys import argv
 def main():
     """main method of module"""
 
-    db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
+    db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3],
+                         port=3306, host="localhost")
     cqry = db.cursor()
-    cqry.execute("""SELECT * FROM states WHERE name = %s""", (argv[4],))
+    cqry.execute("""SELECT *
+    FROM states
+    WHERE name = '{:s}'
+    ORDER BY id ASC""".format(argv[4]))
     rows = cqry.fetchall()
     for r in rows:
         print(r)
