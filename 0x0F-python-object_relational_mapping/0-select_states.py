@@ -15,6 +15,8 @@ def main():
     rows = qry.fetchall()
     for r in rows:
         print(r)
+    qry.close()
+    db.close()
 
 if __name__ == "__main__":
     main()
