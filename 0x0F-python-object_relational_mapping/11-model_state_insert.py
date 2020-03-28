@@ -16,10 +16,10 @@ def main():
                                    pool_pre_ping=True))
     Session = sessionmaker(bind=engine)
     session = Session()
-    n_user = State(name='Louisiana')
-    session.add(n_user)
+    n_state = State(name='Louisiana')
+    session.add(n_state)
     session.commit()
-    print(n_user.id)
+    print(n_state.id)
 
 
 if __name__ == "__main__":
