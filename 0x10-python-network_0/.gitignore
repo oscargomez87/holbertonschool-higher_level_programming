@@ -1,4 +1,4 @@
 *
-[0-9]*.sh
+![0-9]*.sh
 !README.md
 !.gitignore
