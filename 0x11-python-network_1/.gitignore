@@ -1,0 +1,6 @@
+*
+![0-9]*.sh
+![0-9]*.py
+![0-9]*.txt
+!README.md
+!.gitignore
