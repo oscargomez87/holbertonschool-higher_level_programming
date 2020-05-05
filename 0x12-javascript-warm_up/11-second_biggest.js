@@ -1,9 +1,9 @@
 #!/usr/bin/node
-const args = process.argv.slice(2);
-const array = [...new Set(args)];
-const aLength = array.length;
+const aLength = process.argv.slice(2).length;
+const array = [...new Set(process.argv.slice(2))];
+console.log(array)
 if (aLength <= 1) {
-  console.log(0);
+  console.log('0');
 } else {
-  console.log(array.sort()[aLength - 2]);
+  console.log(array.sort()[array.length - 2]);
 }
