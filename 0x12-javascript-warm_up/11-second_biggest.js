@@ -5,5 +5,5 @@ const aLength = array.length;
 if (aLength <= 1) {
   console.log(0);
 } else {
-  console.log(array[aLength - 2]);
+  console.log(array.sort()[aLength - 2]);
 }
