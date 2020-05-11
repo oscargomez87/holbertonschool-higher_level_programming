@@ -3,7 +3,7 @@ const pSquare = require('./5-square');
 
 module.exports = class Square extends pSquare {
   constructor (size) {
-    super(size);
+    super(size, size);
     this.size = size;
   }
 
