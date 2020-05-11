@@ -12,7 +12,7 @@ module.exports = class Square extends pSquare {
       this.print();
     } else {
       for (let step = 0; step < this.size; step++) {
-        console.log(c.repeat(this.size));
+        console.log(String(c).repeat(this.size));
       }
     }
   }
