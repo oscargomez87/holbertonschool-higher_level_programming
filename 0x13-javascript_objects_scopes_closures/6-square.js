@@ -8,12 +8,9 @@ module.exports = class Square extends pSquare {
   }
 
   charPrint (c) {
-    if (c === undefined) {
-      this.print();
-    } else {
-      for (let step = 0; step < this.size; step++) {
-        console.log(String(c).repeat(this.size));
-      }
+    c = !c ? 'X': c;
+    for (let step = 0; step < this.size; step++) {
+      console.log(String(c).repeat(this.size));
     }
   }
 };
