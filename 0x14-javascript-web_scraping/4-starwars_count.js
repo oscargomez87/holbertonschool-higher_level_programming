@@ -9,7 +9,7 @@ request.get(url, (err, response, body) => {
   } else {
     let numMovies = 0;
     const jsonObject = JSON.parse(body).results;
-    if (jsonObject !== undefined){
+    if (jsonObject !== undefined) {
       for (let step = 0; step < jsonObject.length; step++) {
         if (jsonObject[step].characters.includes(charUrl)) {
           numMovies++;
